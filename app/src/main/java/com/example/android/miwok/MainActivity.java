@@ -68,5 +68,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(colorIntent);
             }
         });
+
+        //Set a Click listener on Phrases view
+        phrasesTextView.setOnClickListener(new View.OnClickListener() {
+            //The code in this method will be executed when the Phrases View is clicked
+            @Override
+            public void onClick(View view) {
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                startActivity(phrasesIntent);
+            }
+        });
     }
 }
