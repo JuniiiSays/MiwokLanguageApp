@@ -7,6 +7,7 @@ This app displays lists of vocabulary words for the user to learn the Miwok lang
 - Explicit Intent: To open different activities between the app.
 - Interface: 
 - OnClickListeners: 
+- Array vs ArrayList
 
 How to use this repository
 --------------
