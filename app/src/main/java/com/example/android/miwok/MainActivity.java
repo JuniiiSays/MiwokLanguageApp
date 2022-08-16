@@ -59,5 +59,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Set a Click listener on Color view
+        colorsTextView.setOnClickListener(new View.OnClickListener() {
+            //The code in this method will be executed when the color View is clicked
+            @Override
+            public void onClick(View view) {
+                Intent colorIntent = new Intent(MainActivity.this, ColorsActivity.class);
+                startActivity(colorIntent);
+            }
+        });
     }
 }
