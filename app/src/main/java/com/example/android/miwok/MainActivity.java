@@ -49,5 +49,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Set a click listener on Family view
+        familyTextView.setOnClickListener(new View.OnClickListener() {
+            // The code in tis method will be executed when the family View is clicked
+            @Override
+            public void onClick(View view) {
+                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
+                startActivity(familyIntent);
+            }
+        });
+
     }
 }
