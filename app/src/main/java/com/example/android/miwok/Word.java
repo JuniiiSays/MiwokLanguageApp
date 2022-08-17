@@ -1,19 +1,14 @@
 package com.example.android.miwok;
 
-import android.content.Context;
-import android.view.View;
+class Word {
 
-class Word extends View {
+   //Default Translation for the word
+   private String mDefaultTranslation;
+   //Miwok Translation for the word
+   private String mMiwokTranslation;
 
-   //String Value for english word
-   private String mDefaultWord;
-   //String value for Miwok word
-   private String mMiwokWord;
-   //Context of the app
-   private Context mContext;
-
-   public Word(Context context) {
-      super(context);
+   public Word(String defaultTranslation, String miwokTranslation) {
+      mDefaultTranslation = defaultTranslation;
+      mMiwokTranslation = miwokTranslation;
    }
-
 }
