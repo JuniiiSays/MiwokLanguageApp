@@ -5,6 +5,7 @@ This app displays lists of vocabulary words for the user to learn the Miwok lang
 
 ## Application Features & Implements
 - Explicit Intent: To open different activities between the app.
+#### Concrete Class vs Abstract Class vs Interface
 - Interface: 
 - OnClickListeners: 
 - Array vs ArrayList
