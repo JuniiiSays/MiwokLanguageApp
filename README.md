@@ -15,7 +15,8 @@ This app displays lists of vocabulary words for the user to learn the Miwok lang
 - Array : 
 - ArrayList : 
 --------------
-- OnClickListeners: 
+- OnClickListeners: what happed when the user click on any category list.
+- View Recycling : ListView + ArrayAdapter
 
 How to use this repository
 --------------
