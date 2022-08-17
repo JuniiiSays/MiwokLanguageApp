@@ -32,17 +32,13 @@ public class NumbersActivity extends AppCompatActivity {
         //Find the rootView of Numbers activity
         LinearLayout rootView = findViewById(R.id.rootView);
 
-        int index = 0;
-        while (index < 10){
-
-            //Create a TextView programmatically
+        for (int index1 =0 ; index1 < 10; index1++ ){
+            //Create a TextView
             TextView wordView = new TextView(this);
-            //Show first element of the ArrayList ib that TextView
-            wordView.setText(words.get(index));
-            //Attach TextView with the rootView
+            //Set element to show on this TextView
+            wordView.setText(words.get(index1));
+            //Attach child TextView to Root LinearLayout
             rootView.addView(wordView);
-
-            index++;
         }
     }
 }
