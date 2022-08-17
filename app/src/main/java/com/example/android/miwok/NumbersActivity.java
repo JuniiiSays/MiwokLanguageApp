@@ -29,11 +29,12 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("Nine");
         words.add("Ten");
 
+        //Find the rootView of Numbers activity
+        LinearLayout rootView = findViewById(R.id.rootView);
+
         int index = 0;
         while (index < 10){
 
-            //Find the rootView of Numbers activity
-            LinearLayout rootView = findViewById(R.id.rootView);
             //Create a TextView programmatically
             TextView wordView = new TextView(this);
             //Show first element of the ArrayList ib that TextView
