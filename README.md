@@ -9,8 +9,13 @@ This app displays lists of vocabulary words for the user to learn the Miwok lang
 - Abstract Class : It has state and all methods are fully implemented.
 - Concrete Class : It has state and some methods are fully implemened & some are abstract (not implemented).
 - Interface: It has no state and all methods are abstract (not implimented).
+--------------
+
+#### Array vs ArrayList
+- Array : 
+- ArrayList : 
+--------------
 - OnClickListeners: 
-- Array vs ArrayList
 
 How to use this repository
 --------------
