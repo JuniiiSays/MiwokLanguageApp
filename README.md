@@ -6,7 +6,9 @@ This app displays lists of vocabulary words for the user to learn the Miwok lang
 ## Application Features & Implements
 - Explicit Intent: To open different activities between the app.
 #### Concrete Class vs Abstract Class vs Interface
-- Interface: 
+- Abstract Class : It has state and all methods are fully implemented.
+- Concrete Class : It has state and some methods are fully implemened & some are abstract (not implemented).
+- Interface: It has no state and all methods are abstract (not implimented).
 - OnClickListeners: 
 - Array vs ArrayList
 
