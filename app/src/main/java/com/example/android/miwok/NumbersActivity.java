@@ -30,7 +30,7 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("Ten");
 
         int index = 0;
-        while (index <= 9){
+        while (index < 10){
 
             //Find the rootView of Numbers activity
             LinearLayout rootView = findViewById(R.id.rootView);
