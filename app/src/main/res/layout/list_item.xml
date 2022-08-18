@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="letti"/>
     <TextView
-        android:id="@+id/englishWord"
+        android:id="@+id/defaultWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="One"/>
