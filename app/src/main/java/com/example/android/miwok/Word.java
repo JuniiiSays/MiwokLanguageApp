@@ -9,6 +9,11 @@ class Word {
    //Image resource id
    private int mImageResourceId;
 
+   public Word(String defaultTranslation, String miwokTranslation) {
+      mDefaultTranslation = defaultTranslation;
+      mMiwokTranslation = miwokTranslation;
+   }
+
    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId) {
       mDefaultTranslation = defaultTranslation;
       mMiwokTranslation = miwokTranslation;
