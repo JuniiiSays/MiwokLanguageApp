@@ -42,5 +42,7 @@ public class NumbersActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list);
         //Set adapter data into ListView
         listView.setAdapter(adapter);
+
     }
+
 }
