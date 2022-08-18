@@ -25,9 +25,11 @@ public class ColorsActivity extends AppCompatActivity {
         words.add(new Word("black", "kululli"));
         words.add(new Word("white", "kelelli"));
 
+        //Create an Array adapter from our WordAdpater
         WordAdapter adapter = new WordAdapter(this, words);
-
+        //Find ListView using it's id
         ListView listView = (ListView) findViewById(R.id.list);
+        //Set adapter data into LIstView
         listView.setAdapter(adapter);
     }
 }
