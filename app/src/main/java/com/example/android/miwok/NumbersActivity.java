@@ -23,7 +23,7 @@ public class NumbersActivity extends AppCompatActivity {
         //ArrayList of String for english words
         ArrayList<Word> words = new ArrayList<Word>();
         //First Method to add values
-        Word w = new Word("One", "letti");
+        Word w = new Word("One", "letti", R.drawable.number_one);
         words.add(w);
         //Second Nethod to add words
         words.add(new Word("two", "otiiko"));
