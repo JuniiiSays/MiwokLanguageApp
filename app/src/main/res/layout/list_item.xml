@@ -5,13 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/tan_background">
-
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
         android:src="@mipmap/ic_launcher"/>
-
     <LinearLayout
         android:paddingStart="16dp"
         android:id="@+id/text_container"
@@ -35,7 +33,4 @@
             android:textColor="@color/text_color_white"
             android:text="One"/>
     </LinearLayout>
-
-
-
 </LinearLayout>
