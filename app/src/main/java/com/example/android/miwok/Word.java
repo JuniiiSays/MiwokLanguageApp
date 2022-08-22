@@ -38,7 +38,7 @@ class Word {
       return mDefaultTranslation;
    }
 
-   public String getAudioResourceId(){
+   public int getAudioResourceId(){
       return mAudioResourceId;
    }
 

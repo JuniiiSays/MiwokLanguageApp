@@ -2,18 +2,25 @@ package com.example.android.miwok;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
+
+    private MediaPlayer mMediaPlayer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +30,7 @@ public class NumbersActivity extends AppCompatActivity {
         //ArrayList of String for english words
         ArrayList<Word> words = new ArrayList<Word>();
         //First Method to add values
-        Word w = new Word("One", "letti", R.drawable.number_one, R.raw.number_one);
+        Word w = new Word("One", "lutti", R.drawable.number_one, R.raw.number_one);
         words.add(w);
         //Second Nethod to add words
         words.add(new Word("two", "otiiko", R.drawable.number_two, R.raw.number_two));
@@ -42,6 +49,14 @@ public class NumbersActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list);
         //Set adapter data into ListView
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                mMediaPlayer = MediaPlayer.create(NumbersActivity.this, R.raw.number_one);
+                mMediaPlayer.start();
+            }
+        });
 
     }
 
