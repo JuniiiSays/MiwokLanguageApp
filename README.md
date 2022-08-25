@@ -22,6 +22,7 @@ This app displays lists of vocabulary words for the user to learn the Miwok lang
 - ListView.setOnItemClickListener
 - Activity Lifecycle:
 - Audio Focus: 
+- selectableItemBackground: 
 
 How to use this repository
 --------------
