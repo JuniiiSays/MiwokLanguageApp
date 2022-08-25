@@ -20,6 +20,8 @@ This app displays lists of vocabulary words for the user to learn the Miwok lang
 - Custom ArrayAdapter
 - MediaPlayer : 
 - ListView.setOnItemClickListener
+- Activity Lifecycle:
+- Audio Focus: 
 
 How to use this repository
 --------------
