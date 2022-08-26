@@ -15,20 +15,12 @@
  */
 package com.example.android.miwok;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TableLayout;
-import android.widget.TextView;
 // import android.support.v7.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
-
-import org.w3c.dom.Text;
-
-import java.lang.annotation.Target;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.viewpager);
         TabLayout tabLayout = findViewById(R.id.tab_layout);
 
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this, getSupportFragmentManager());
+        CategoryAdapter viewPagerAdapter = new CategoryAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(viewPagerAdapter);
 
         tabLayout.setupWithViewPager(viewPager);

@@ -7,12 +7,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-class ViewPagerAdapter extends FragmentPagerAdapter {
+class CategoryAdapter extends FragmentPagerAdapter {
 
     /** Context of the app */
     private Context mContext;
 
-    public ViewPagerAdapter(Context context, FragmentManager fm) {
+    public CategoryAdapter(Context context, FragmentManager fm) {
         super(fm);
         mContext = context;
     }
