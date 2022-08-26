@@ -23,6 +23,10 @@ This app displays lists of vocabulary words for the user to learn the Miwok lang
 - Activity Lifecycle:
 - Audio Focus: 
 - selectableItemBackground: 
+- Fragments :
+- Fragment LifeCycle:
+- ViewPager FragmentPagerAdapter :
+- Tabs in BiewPager:
 
 How to use this repository
 --------------
