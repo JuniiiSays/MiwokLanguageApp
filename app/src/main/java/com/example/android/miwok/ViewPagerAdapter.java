@@ -1,5 +1,7 @@
 package com.example.android.miwok;
 
+import android.content.Context;
+
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -7,8 +9,12 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 class ViewPagerAdapter extends FragmentPagerAdapter {
 
-    public ViewPagerAdapter( FragmentManager fm) {
+    /** Context of the app */
+    private Context mContext;
+
+    public ViewPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
+        mContext = context;
     }
 
     @Override
@@ -32,15 +38,14 @@ class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        String title = null;
-        if (position == 0)
-            title = "Numbers";
-        else if (position == 1)
-            title = "Family Members";
-        else if (position == 2)
-            title = "Colors";
-        else if (position == 3)
-            title = "Phrases";
-        return title;
+        if (position == 0) {
+            return mContext.getString(R.string.category_numbers);
+        } else if (position == 1) {
+            return mContext.getString(R.string.category_family);
+        } else if (position == 2) {
+            return mContext.getString(R.string.category_colors);
+        } else {
+            return mContext.getString(R.string.category_phrases);
+        }
     }
 }
