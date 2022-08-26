@@ -21,6 +21,7 @@ import android.view.View;
 import android.widget.TextView;
 // import android.support.v7.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import org.w3c.dom.Text;
 
@@ -33,50 +34,11 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the numbers,family,colors and phrases category
-        TextView numbersTextView = (TextView) findViewById(R.id.numbers);
-        TextView familyTextView = (TextView) findViewById(R.id.family);
-        TextView colorsTextView = (TextView) findViewById(R.id.colors);
-        TextView phrasesTextView = (TextView) findViewById(R.id.phrases);
+        ViewPager viewPager = findViewById(R.id.viewpager);
 
-        // Set a click listener on Numbers View
-        numbersTextView.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
-            @Override
-            public void onClick(View view) {
-                Intent numberIntent = new Intent(MainActivity.this, NumbersActivity.class);
-                startActivity(numberIntent);
-            }
-        });
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        //Set a click listener on Family view
-        familyTextView.setOnClickListener(new View.OnClickListener() {
-            // The code in tis method will be executed when the family View is clicked
-            @Override
-            public void onClick(View view) {
-                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
-                startActivity(familyIntent);
-            }
-        });
+        viewPager.setAdapter(viewPagerAdapter);
 
-        //Set a Click listener on Color view
-        colorsTextView.setOnClickListener(new View.OnClickListener() {
-            //The code in this method will be executed when the color View is clicked
-            @Override
-            public void onClick(View view) {
-                Intent colorIntent = new Intent(MainActivity.this, ColorsActivity.class);
-                startActivity(colorIntent);
-            }
-        });
-
-        //Set a Click listener on Phrases view
-        phrasesTextView.setOnClickListener(new View.OnClickListener() {
-            //The code in this method will be executed when the Phrases View is clicked
-            @Override
-            public void onClick(View view) {
-                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
-                startActivity(phrasesIntent);
-            }
-        });
     }
 }
