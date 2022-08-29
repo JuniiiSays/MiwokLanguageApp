@@ -4,15 +4,14 @@ Miwok App
 This app displays lists of vocabulary words for the user to learn the Miwok language.
 
 ## Screenshots
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/45339238/186881114-35ada5d1-48c0-4dd9-b7cf-76cb67a1752a.png" width="300" />
-  <img src="https://user-images.githubusercontent.com/45339238/186881142-9859cfc3-a209-4850-94f9-eed91e75aae7.png" width="300" /> 
-  
-</p>
-<p float="left">
-<img src="https://user-images.githubusercontent.com/45339238/186881160-3ed607e1-3312-4f54-9d6b-ff53f4db95fd.png" width="300" />
-<img src="https://user-images.githubusercontent.com/45339238/186881180-5290a07d-c205-4397-92de-975ca99f8e55.png" width="300" />
-</p>
+
+Numbers Screen             |  Family Screen     
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/45339238/186881114-35ada5d1-48c0-4dd9-b7cf-76cb67a1752a.png)  |  ![](https://user-images.githubusercontent.com/45339238/186881142-9859cfc3-a209-4850-94f9-eed91e75aae7.png)
+
+Colors Screen             |  Phrases Screen     
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/45339238/186881160-3ed607e1-3312-4f54-9d6b-ff53f4db95fd.png)  |  ![](https://user-images.githubusercontent.com/45339238/186881180-5290a07d-c205-4397-92de-975ca99f8e55.png) 
 
 ## Application Features & Implements
 - Explicit Intent: To open different activities between the app.
